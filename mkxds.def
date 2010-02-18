@@ -1,0 +1,14 @@
+; mkxds.def
+;
+; This file provides declarations of the entrypoints in
+; the DLL.
+
+LIBRARY         "mkxds.dll"
+DESCRIPTION     'Matroska Demuxer Filter'
+EXPORTS
+    DllMain             PRIVATE
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE
+    DllGetClassObject   PRIVATE
+    DllCanUnloadNow     PRIVATE
+
